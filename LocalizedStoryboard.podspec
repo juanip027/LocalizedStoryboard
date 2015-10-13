@@ -1,9 +1,11 @@
 Pod::Spec.new do |s|
 s.name             = "LocalizedStoryboard"
-s.version          = "0.1.0"
+s.version          = "0.1.1"
 s.summary          = "A simple localization approach for Storyboards."
 
 s.description      = <<-DESC
+This library includes a subclass for every UIKit control available in Interface Builder.
+i.e: If you replace UILabel with LSLabel in your Storyboard, the "text" property will be localized using the current value as a key in the Localizable.strings file.
 DESC
 
 s.homepage         = "https://github.com/juanip027/LocalizedStoryboard"
