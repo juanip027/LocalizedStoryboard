@@ -7,6 +7,11 @@
 
 ## Usage
 
+### Storyboard
+<p>
+<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/storyboard.png" alt="lighten and darken color" width="280"/>
+</p>
+
 ### Storyboard Inspector
 <p>
 <img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/inspector.png" alt="lighten and darken color" width="280"/>
@@ -15,11 +20,6 @@
 ### Localizable.strings
 <p>
 <img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/localized.png" alt="lighten and darken color" width="280"/>
-</p>
-
-### Storyboard
-<p>
-<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/storyboard.png" alt="lighten and darken color" width="280"/>
 </p>
 
 ### Result
