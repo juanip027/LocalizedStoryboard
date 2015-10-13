@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LocalizedStoryboard_Example', :exclusive => true do
+  pod "LocalizedStoryboard", :path => "../"
+end
+
+target 'LocalizedStoryboard_Tests', :exclusive => true do
+  pod "LocalizedStoryboard", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+end
