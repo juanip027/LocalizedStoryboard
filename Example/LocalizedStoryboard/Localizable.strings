@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  LocalizedStoryboard
+
+  Created by Juani on 12/10/2015.
+  Copyright © 2015 CocoaPods. All rights reserved.
+*/
+
+kTitle="A title";
+kLeft="Left";
+kRight="Right";
+
+kLabel="A Label";
+kButton="A Button";
+kSegmentFirst="First";
+kSegmentSecond="Second";
+kSelectedButton="A Selected Button";
+kTextField="A Text Field";
+kPlaceholder="Write something here";
+kTextView="A Text View";
+

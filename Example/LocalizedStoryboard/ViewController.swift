@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import LocalizedStoryboard
 
 class ViewController: UIViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+    @IBAction func handleButton(sender: AnyObject) {
+        if let b = sender as? LSButton {
+            b.selected = !b.selected
+        }
+    }
 }
 

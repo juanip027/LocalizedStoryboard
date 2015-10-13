@@ -1,25 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HbL-PG-pmi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--kTitle-->
+        <scene sceneID="Ok7-7y-2xC">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SjB-7h-W7K" customClass="ViewController" customModule="LocalizedStoryboard_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="tOj-cx-MYi"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIh-Dm-uef"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="9ub-3F-dlE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-g3-oQG" customClass="LSLabel" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="84" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="paP-Re-G4S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-Qp-U5g" customClass="LSButton" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="134" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yO6-dJ-nXM"/>
+                                </constraints>
+                                <state key="normal" title="kButton"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-Lu-c3t" customClass="LSSegmentedControl" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="184" width="568" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CLM-hB-1A5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="kSegmentFirst"/>
+                                    <segment title="kSegmentSecond"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-8d-4oh" customClass="LSButton" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="234" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eLN-2Q-XEk"/>
+                                </constraints>
+                                <state key="normal" title="kButton"/>
+                                <state key="selected" title="kSelectedButton"/>
+                                <connections>
+                                    <action selector="handleButton:" destination="SjB-7h-W7K" eventType="touchUpInside" id="sgT-CL-XSy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kTextField" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-aq-zna" customClass="LSTextField" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="284" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6RT-zw-EuH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSn-bf-gmf" customClass="LSTextField" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="334" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zSc-XM-ryV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="kTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="40z-Y6-EKl" customClass="LSTextView" customModule="LocalizedStoryboard">
+                                <rect key="frame" x="16" y="384" width="568" height="196"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h0D-8d-4oh" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="1mG-yr-v5D"/>
+                            <constraint firstItem="qOO-Qp-U5g" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="4ls-6B-mee"/>
+                            <constraint firstItem="40z-Y6-EKl" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="EeZ-yy-NVB"/>
+                            <constraint firstItem="40z-Y6-EKl" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="JMF-In-PlC"/>
+                            <constraint firstItem="wSn-bf-gmf" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="JRZ-ag-8mR"/>
+                            <constraint firstItem="bmU-g3-oQG" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="MAn-JM-hMR"/>
+                            <constraint firstItem="qOO-Qp-U5g" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="PmC-Ib-K8O"/>
+                            <constraint firstItem="rIh-Dm-uef" firstAttribute="top" secondItem="40z-Y6-EKl" secondAttribute="bottom" constant="20" id="Tw7-jn-b3Z"/>
+                            <constraint firstItem="h0D-8d-4oh" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="V4I-af-7H7"/>
+                            <constraint firstItem="wSn-bf-gmf" firstAttribute="top" secondItem="UZt-aq-zna" secondAttribute="bottom" constant="20" id="VRd-Sr-auL"/>
+                            <constraint firstItem="wSn-bf-gmf" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="X9B-vm-up6"/>
+                            <constraint firstItem="bmU-g3-oQG" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="XQR-rQ-Stk"/>
+                            <constraint firstItem="h0D-8d-4oh" firstAttribute="top" secondItem="G7S-Lu-c3t" secondAttribute="bottom" constant="20" id="b8W-0Q-pCx"/>
+                            <constraint firstItem="bmU-g3-oQG" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="cFI-rr-DGI"/>
+                            <constraint firstItem="G7S-Lu-c3t" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="cYL-dt-zD5"/>
+                            <constraint firstItem="UZt-aq-zna" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="eee-vz-8HM"/>
+                            <constraint firstItem="G7S-Lu-c3t" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="g2x-i9-QuP"/>
+                            <constraint firstItem="UZt-aq-zna" firstAttribute="top" secondItem="h0D-8d-4oh" secondAttribute="bottom" constant="20" id="jSS-DZ-GcU"/>
+                            <constraint firstItem="h0D-8d-4oh" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="kLD-I8-U56"/>
+                            <constraint firstItem="qOO-Qp-U5g" firstAttribute="top" secondItem="bmU-g3-oQG" secondAttribute="bottom" constant="20" id="qxw-DW-63e"/>
+                            <constraint firstItem="40z-Y6-EKl" firstAttribute="top" secondItem="wSn-bf-gmf" secondAttribute="bottom" constant="20" id="rMt-pw-RiZ"/>
+                            <constraint firstItem="UZt-aq-zna" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="rXe-2P-Pln"/>
+                            <constraint firstItem="40z-Y6-EKl" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="rle-Sm-lc8"/>
+                            <constraint firstItem="G7S-Lu-c3t" firstAttribute="top" secondItem="qOO-Qp-U5g" secondAttribute="bottom" constant="20" id="s4l-RD-0M4"/>
+                            <constraint firstItem="wSn-bf-gmf" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="tHI-F3-5ez"/>
+                            <constraint firstItem="bmU-g3-oQG" firstAttribute="top" secondItem="tOj-cx-MYi" secondAttribute="bottom" constant="20" id="uTX-nf-GhS"/>
+                            <constraint firstItem="G7S-Lu-c3t" firstAttribute="trailing" secondItem="9ub-3F-dlE" secondAttribute="trailingMargin" id="vuP-N7-WiQ"/>
+                            <constraint firstItem="qOO-Qp-U5g" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="w9W-PG-fZd"/>
+                            <constraint firstItem="UZt-aq-zna" firstAttribute="centerX" secondItem="9ub-3F-dlE" secondAttribute="centerX" id="wV3-7M-1jN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="kTitle" id="hHD-t5-FBN" customClass="LSNavigationItem" customModule="LocalizedStoryboard">
+                        <barButtonItem key="leftBarButtonItem" title="kLeft" id="pku-lD-ZXk" customClass="LSBarButtonItem" customModule="LocalizedStoryboard"/>
+                        <barButtonItem key="rightBarButtonItem" title="kRight" id="OH1-Wd-Fdc" customClass="LSBarButtonItem" customModule="LocalizedStoryboard"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cI-5H-Js5" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1004" y="378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fjC-MZ-CVL">
+            <objects>
+                <navigationController id="HbL-PG-pmi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNl-cD-o7f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SjB-7h-W7K" kind="relationship" relationship="rootViewController" id="j3u-hy-cCI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mr-Rt-0pl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="378"/>
         </scene>
     </scenes>
 </document>
