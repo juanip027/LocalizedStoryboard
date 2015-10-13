@@ -7,6 +7,29 @@
 
 ## Usage
 
+### Storyboard Inspector
+<p>
+<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/inspector.png" alt="lighten and darken color" width="280"/>
+</p>
+
+### Localizable.strings
+<p>
+<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/localized.png" alt="lighten and darken color" width="280"/>
+</p>
+
+### Storyboard
+<p>
+<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/storyboard.png" alt="lighten and darken color" width="280"/>
+</p>
+
+### Result
+<p> 
+<img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/simulator.png" alt="lighten and darken color" width="280"/>
+</p>
+
+
+## Example App
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
@@ -22,7 +45,7 @@ pod "LocalizedStoryboard"
 
 ## Author
 
-juanip027, juanip027@gmail.com
+juanip027, 
 
 ## License
 
