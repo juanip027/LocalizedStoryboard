@@ -27,12 +27,8 @@
 <img src="https://raw.githubusercontent.com/juanip027/LocalizedStoryboard/master/img/simulator.png" alt="lighten and darken color" width="280"/>
 </p>
 
-
-## Example App
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+    Swift 2
 
 ## Installation
 
@@ -42,6 +38,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "LocalizedStoryboard"
 ```
+
+## Example App
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 
