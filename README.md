@@ -1,5 +1,6 @@
 # LocalizedStoryboard
 
+[![CI Status](http://img.shields.io/travis/juanip027/LocalizedStoryboard.svg?style=flat)](https://travis-ci.org/juanip027/LocalizedStoryboard)
 [![Version](https://img.shields.io/cocoapods/v/LocalizedStoryboard.svg?style=flat)](http://cocoapods.org/pods/LocalizedStoryboard)
 [![License](https://img.shields.io/cocoapods/l/LocalizedStoryboard.svg?style=flat)](http://cocoapods.org/pods/LocalizedStoryboard)
 [![Platform](https://img.shields.io/cocoapods/p/LocalizedStoryboard.svg?style=flat)](http://cocoapods.org/pods/LocalizedStoryboard)
