@@ -23,15 +23,22 @@
 import UIKit
 import LocalizedStoryboard
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
+    @IBOutlet public var aLabel: LSLabel!
+    @IBOutlet public var aButton: LSButton!
+    @IBOutlet public var aSegmentedControl: LSSegmentedControl!
+    @IBOutlet public var aSelectedButton: LSButton!
+    @IBOutlet public var aTextField: LSTextField!
+    @IBOutlet public var aTextFieldWithPlaceholder: LSTextField!
+    @IBOutlet public var aTextView: LSTextView!
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

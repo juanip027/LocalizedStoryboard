@@ -6,3 +6,9 @@ target 'LocalizedStoryboard_Example', :exclusive => true do
 end
 
 
+target 'LocalizedStoryboard_Tests', :exclusive => true do
+    pod "LocalizedStoryboard", :path => "../"
+    
+    pod 'Quick', '~> 0.6'
+    pod 'Nimble', '~> 2.0'
+end

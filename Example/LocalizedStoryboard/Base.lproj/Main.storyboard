@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HbL-PG-pmi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HbL-PG-pmi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--kTitle-->
         <scene sceneID="Ok7-7y-2xC">
             <objects>
-                <viewController id="SjB-7h-W7K" customClass="ViewController" customModule="LocalizedStoryboard_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="SjB-7h-W7K" customClass="ViewController" customModule="LocalizedStoryboard_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tOj-cx-MYi"/>
                         <viewControllerLayoutGuide type="bottom" id="rIh-Dm-uef"/>
@@ -17,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-g3-oQG" customClass="LSLabel" customModule="LocalizedStoryboard">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="kLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-g3-oQG" customClass="LSLabel" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="84" width="568" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="paP-Re-G4S"/>
                                 </constraints>
@@ -26,15 +28,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-Qp-U5g" customClass="LSButton" customModule="LocalizedStoryboard">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-Qp-U5g" customClass="LSButton" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="134" width="568" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yO6-dJ-nXM"/>
                                 </constraints>
                                 <state key="normal" title="kButton"/>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-Lu-c3t" customClass="LSSegmentedControl" customModule="LocalizedStoryboard">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-Lu-c3t" customClass="LSSegmentedControl" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="184" width="568" height="31"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CLM-hB-1A5"/>
                                 </constraints>
@@ -43,8 +47,9 @@
                                     <segment title="kSegmentSecond"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-8d-4oh" customClass="LSButton" customModule="LocalizedStoryboard">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-8d-4oh" customClass="LSButton" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="234" width="568" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="eLN-2Q-XEk"/>
                                 </constraints>
@@ -54,28 +59,32 @@
                                     <action selector="handleButton:" destination="SjB-7h-W7K" eventType="touchUpInside" id="sgT-CL-XSy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kTextField" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-aq-zna" customClass="LSTextField" customModule="LocalizedStoryboard">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kTextField" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-aq-zna" customClass="LSTextField" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="284" width="568" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6RT-zw-EuH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSn-bf-gmf" customClass="LSTextField" customModule="LocalizedStoryboard">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kPlaceholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSn-bf-gmf" customClass="LSTextField" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="334" width="568" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="zSc-XM-ryV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="kTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="40z-Y6-EKl" customClass="LSTextView" customModule="LocalizedStoryboard">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="kTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="40z-Y6-EKl" customClass="LSTextView" customModule="LocalizedStoryboard">
                                 <rect key="frame" x="16" y="384" width="568" height="196"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="h0D-8d-4oh" firstAttribute="leading" secondItem="9ub-3F-dlE" secondAttribute="leadingMargin" id="1mG-yr-v5D"/>
@@ -113,6 +122,15 @@
                         <barButtonItem key="leftBarButtonItem" title="kLeft" id="pku-lD-ZXk" customClass="LSBarButtonItem" customModule="LocalizedStoryboard"/>
                         <barButtonItem key="rightBarButtonItem" title="kRight" id="OH1-Wd-Fdc" customClass="LSBarButtonItem" customModule="LocalizedStoryboard"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="aButton" destination="qOO-Qp-U5g" id="2FV-Lg-O4u"/>
+                        <outlet property="aLabel" destination="bmU-g3-oQG" id="R4O-rc-dge"/>
+                        <outlet property="aSegmentedControl" destination="G7S-Lu-c3t" id="BZa-rg-mKk"/>
+                        <outlet property="aSelectedButton" destination="h0D-8d-4oh" id="zIY-qL-TfO"/>
+                        <outlet property="aTextField" destination="UZt-aq-zna" id="LL3-v5-oB6"/>
+                        <outlet property="aTextFieldWithPlaceholder" destination="wSn-bf-gmf" id="Pif-ey-oiz"/>
+                        <outlet property="aTextView" destination="40z-Y6-EKl" id="KqP-sG-MMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cI-5H-Js5" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +143,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNl-cD-o7f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="SjB-7h-W7K" kind="relationship" relationship="rootViewController" id="j3u-hy-cCI"/>
