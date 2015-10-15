@@ -22,8 +22,16 @@
 
 import UIKit
 
+/**
+    A localized class extension of UIButton
+
+    This class overrides the awakeFromNib method to localize the title in every button state.
+*/
 public class LSButton: UIButton {
 
+    /**
+    Overridden to update the localizable properties, using the current value as a lookup key in Localizable.strings
+    */
     override public func awakeFromNib() {
         super.awakeFromNib()
         

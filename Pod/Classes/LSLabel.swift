@@ -22,8 +22,16 @@
 
 import UIKit
 
+/**
+    A localized class extension of UILabel.
+
+    This class overrides the awakeFromNib method to localize the text property.
+*/
 public class LSLabel: UILabel {
 
+    /**
+        Overridden to update the localizable properties, using the current value as a lookup key in Localizable.strings
+    */
     override public func awakeFromNib() {
         super.awakeFromNib()
         

@@ -22,8 +22,16 @@
 
 import UIKit
 
+/**
+    A localized class extension of UITextField.
+
+    This class overrides the awakeFromNib method to localize the text and placeholder properties.
+*/
 public class LSTextField: UITextField {
 
+    /**
+        Overridden to update the localizable properties, using the current value as a lookup key in Localizable.strings
+    */
     override public func awakeFromNib() {
         super.awakeFromNib()
         

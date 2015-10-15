@@ -22,8 +22,16 @@
 
 import UIKit
 
+/**
+    A localized class extension of UISearchBar.
+
+    This class overrides the awakeFromNib method to localize the placeholder and prompt properties.
+*/
 public class LSSearchBar: UISearchBar {
 
+    /**
+        Overridden to update the localizable properties, using the current value as a lookup key in Localizable.strings
+    */
     override public func awakeFromNib() {
         super.awakeFromNib()
         

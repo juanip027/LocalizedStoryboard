@@ -5,7 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/LocalizedStoryboard.svg?style=flat)](http://cocoapods.org/pods/LocalizedStoryboard)
 [![Platform](https://img.shields.io/cocoapods/p/LocalizedStoryboard.svg?style=flat)](http://cocoapods.org/pods/LocalizedStoryboard)
 
+
 ## Usage
+It's a very simple just use LSButton, LSNavigationItem, etc in your Storyboard and that's it.
+e.g.: if you use LSLabel as custom class in the storyboard, when it is loaded it will localize the text property, using the current property value as a lookup key in Localizable.strings.
+It includes a subclass for every UIKit control localizable in the Storyboard.
 
 ### Storyboard
 <p>
